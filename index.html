@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>会议室预约系统 - 首页</title>
+<style>
+  body { font-family: Arial, sans-serif; background: #f3f4f6; margin: 0; padding: 20px; }
+  h1 { color: #2563eb; }
+  .room-list { display: flex; flex-wrap: wrap; gap: 16px; }
+  .room-card { background: white; border-radius: 8px; padding: 16px; width: 200px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+  .room-name { font-weight: bold; font-size: 1.2em; color: #1e40af; margin-bottom: 8px; }
+  .room-details { font-size: 0.9em; color: #4b5563; margin-bottom: 12px; }
+  .btn-book { background: #3b82f6; color: white; padding: 10px 14px; border: none; border-radius: 6px; cursor: pointer; font-weight: bold;}
+  .btn-book:hover { background: #2563eb; }
+</style>
+</head>
+<body>
+  <h1>会议室列表</h1>
+  <div class="room-list">
+    <div class="room-card">
+      <div class="room-name">会议室A</div>
+      <div class="room-details">可容纳10人，配备投影仪</div>
+      <button class="btn-book">预约</button>
+    </div>
+    <div class="room-card">
+      <div class="room-name">会议室B</div>
+      <div class="room-details">可容纳6人，带视频会议设备</div>
+      <button class="btn-book">预约</button>
+    </div>
+    <div class="room-card">
+      <div class="room-name">会议室C</div>
+      <div class="room-details">可容纳20人，白板和无线网络</div>
+      <button class="btn-book">预约</button>
+    </div>
+  </div>
+</body>
+</html>
