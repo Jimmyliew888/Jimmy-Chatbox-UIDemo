@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Meeting Room Booking</title>
+<style>
+  body { font-family: Arial, sans-serif; background: #f0f4f8; padding: 30px; }
+  h1 { color: #2563eb; }
+  form { max-width: 420px; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgb(0 0 0 / 0.1); }
+  label { display: block; margin: 12px 0 6px; font-weight: bold; }
+  select, input[type=email], input[type=datetime-local] {
+    width: 100%; padding: 8px; font-size: 1em; border-radius: 4px; border: 1px solid #ccc;
+  }
+  button {
+    margin-top: 16px; padding: 10px 20px; font-size: 1em;
+    color: white; background-color: #2563eb; border: none; border-radius: 4px; cursor: pointer;
+  }
+  button:hover {
+    background-color: #1d4ed8;
+  }
+  .success-message {
+    color: green; margin-top: 14px; font-weight: bold;
+  }
+</style>
+</head>
+<body>
+  <h1>Meeting Room Booking</h1>
+  <form id="bookingForm">
+    <label for="room">Select Meeting Room</label>
+    <select id="room" name="room" required>
+      <option value="Training room">Training room</option>
+      <option value="Shanghai meeting room">Shanghai meeting room</option>
+      <option value="Osaka Meeting room">Osaka Meeting room</option>
+      <option value="New York meeting room">New York meeting room</option>
+      <option value="London meeting room">London meeting room</option>
+      <option value="Langkawi meeting room">Langkawi meeting room</option>
+    </select>
+
+    <label for="datetime">Select Date &amp; Time</label>
+    <input type="datetime-local" id="datetime" name="datetime" required />
+
+    <label for="email">Your Email</label>
+    <input type="email" id="email" name="email" placeholder="your.email@example.com" required />
+
+    <button type="submit">Book Now</button>
+    <div id="success" class="success-message" style="display:none;">Booking submitted successfully!</div>
+  </form>
+
+  <script>
+    const form = document.getElementById('bookingForm');
+    const success = document.getElementById('success');
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      // Simulate booking submission
+      const data = {
+        room: form.room.value,
+        datetime: form.datetime.value,
+        email: form.email.value,
+      };
+      console.log('Booking data:', data);
+      form.reset();
+      success.style.display = 'block';
+    });
+  </script>
+</body>
+</html>
