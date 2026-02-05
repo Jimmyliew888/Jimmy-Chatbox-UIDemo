@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Meeting Room Booking System</title>
+<style>
+  body { font-family: Arial, sans-serif; background: #f3f4f6; margin: 0; padding: 20px; }
+  h1 { color: #2563eb; }
+  .room-list { display: flex; flex-wrap: wrap; gap: 16px; }
+  .room-card { background: white; border-radius: 8px; padding: 16px; width: 200px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+  .room-name { font-weight: bold; font-size: 1.2em; color: #1e40af; margin-bottom: 8px; }
+  .room-details { font-size: 0.9em; color: #4b5563; margin-bottom: 12px; }
+  .btn-book { background: #3b82f6; color: white; padding: 10px 14px; border: none; border-radius: 6px; cursor: pointer; font-weight: bold;}
+  .btn-book:hover { background: #2563eb; }
+</style>
+</head>
+<body>
+  <h1>Meeting Room List</h1>
+  <div class="room-list">
+    <div class="room-card">
+      <div class="room-name">Training room</div>
+      <div class="room-details">Capacity 10</div>
+      <button class="btn-book">Book</button>
+    </div>
+    <div class="room-card">
+      <div class="room-name">Shanghai meeting room</div>
+      <div class="room-details">Capacity 6</div>
+      <button class="btn-book">Book</button>
+    </div>
+    <div class="room-card">
+      <div class="room-name">Osaka Meeting room</div>
+      <div class="room-details">Capacity 20</div>
+      <button class="btn-book">Book</button>
+    </div>
+    <div class="room-card">
+      <div class="room-name">New York meeting room</div>
+      <div class="room-details">Capacity 15</div>
+      <button class="btn-book">Book</button>
+    </div>
+    <div class="room-card">
+      <div class="room-name">London meeting room</div>
+      <div class="room-details">Capacity 10</div>
+      <button class="btn-book">Book</button>
+    </div>
+    <div class="room-card">
+      <div class="room-name">Langkawi meeting room</div>
+      <div class="room-details">Capacity 12</div>
+      <button class="btn-book">Book</button>
+    </div>
+  </div>
+</body>
+</html>
